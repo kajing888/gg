@@ -143,8 +143,6 @@ def approval():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://pastebin.com/raw/5gAmA8AJ').text
-    if id in httpCaht:
       print("\033[1;92mYour Token is successfully Approved")
       msg = str(os.geteuid())
       time.sleep(0.5)
